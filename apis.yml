@@ -1,8 +1,25 @@
 aid: nephroplus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nephroplus.png
 name: NephroPlus
-description: 'NephroPlus is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'NephroPlus is India''s largest dialysis network, operating 500+ dialysis
+  centers across the country and delivering kidney care through in-clinic hemodialysis,
+  home hemodialysis, and peritoneal dialysis, alongside allied nephrology services
+  and a training academy for dialysis technicians. Backed by Bessemer Venture Partners,
+  the company reaches patients through its consumer website and mobile apps (iOS and
+  Android). It was surfaced as a portfolio-company lead and added to the API Evangelist
+  network for enrichment; as of this pass NephroPlus publishes no public API, developer
+  portal, SDK, or machine-readable discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/nephroplus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Dialysis
+- Kidney Care
+- Nephrology
+- India
+- Health Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nephroplus-domain-security.yml
 - type: Website
   url: https://www.nephroplus.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of /.well-known/* on the NephroPlus consumer host
+host: https://www.nephroplus.com
+notes: >-
+  NephroPlus publishes no machine-readable discovery surface. Every probed
+  /.well-known/ path 301-redirects to the apex host and terminates in a 403
+  (WAF), and no document was returned. developer./api./docs. subdomains do not
+  resolve; /api, /developers, and /llms.txt return 404. Absence recorded as
+  valid data; no WellKnown or SecurityTxt pointer is emitted because nothing
+  returned 200.
+documents:
+- path: /.well-known/security.txt
+  status: 403
+  file: null
+- path: /.well-known/openid-configuration
+  status: 403
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 403
+  file: null
+- path: /.well-known/api-catalog
+  status: 403
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 403
+  file: null
